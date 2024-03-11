@@ -3,7 +3,29 @@ package TestDataPojo;
 public class TestData {
 	private String username;
 	private String password;
-	private BookingDetails BookingDetails;
+	private BookingDetail bookingDetails;
+	private BookingDetail updatedBookingDetails;
+	private String updatedFirstname;
+	private String updatedLastname;
+	
+	public String getUpdatedFirstname() {
+		return updatedFirstname;
+	}
+	public void setUpdatedFirstname(String updatedFirstname) {
+		this.updatedFirstname = updatedFirstname;
+	}
+	public String getUpdatedLastname() {
+		return updatedLastname;
+	}
+	public void setUpdatedLastname(String updatedLastname) {
+		this.updatedLastname = updatedLastname;
+	}
+	public BookingDetail getUpdatedBookingDetails() {
+		return updatedBookingDetails;
+	}
+	public void setUpdatedBookingDetails(BookingDetail updatedBookingDetails) {
+		this.updatedBookingDetails = updatedBookingDetails;
+	}
 	public String getUsername() {
 		return username;
 	}
@@ -16,11 +38,11 @@ public class TestData {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public BookingDetails getBookingDetails() {
-		return BookingDetails;
+	public BookingDetail getBookingDetails() {
+		return bookingDetails;
 	}
-	public void setBookingDetails(BookingDetails bookingDetails) {
-		BookingDetails = bookingDetails;
+	public void setBookingDetails(BookingDetail bookingDetails) {
+		this.bookingDetails = bookingDetails;
 	}
 	
 

@@ -1,12 +1,12 @@
 package ReqPojo;
 
-import TestDataPojo.BookingDates;
+
 
 public class CreateBookingReqPojo {
 	private String firstname;
 	private String lastname;
 	private String totalprice;
-	private String depositpaid;
+	private boolean depositpaid;
 	private String additionalneeds;
 	private BookingDates bookingdates;
 	public String getFirstname() {
@@ -27,10 +27,10 @@ public class CreateBookingReqPojo {
 	public void setTotalprice(String totalprice) {
 		this.totalprice = totalprice;
 	}
-	public String getDepositpaid() {
+	public boolean getDepositpaid() {
 		return depositpaid;
 	}
-	public void setDepositpaid(String depositpaid) {
+	public void setDepositpaid(boolean depositpaid) {
 		this.depositpaid = depositpaid;
 	}
 	public String getAdditionalneeds() {

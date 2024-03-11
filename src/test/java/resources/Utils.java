@@ -36,8 +36,8 @@ public class Utils {
 	}
 	
 	public io.restassured.specification.RequestSpecification RequestAuthSpecification(String token) throws IOException {
-		if(reqSpec==null) {
-			reqSpec = new RequestSpecBuilder()
+		if(reqAuthSpec==null) {
+			reqAuthSpec = new RequestSpecBuilder()
 							.setBaseUri(getGlobalValue("baseUrl"))
 							.addHeader("Cookie", "token="+token)
 							.addHeader("Accept", "application/json")
@@ -45,9 +45,9 @@ public class Utils {
 							.addFilter(RequestLoggingFilter.logRequestTo(log))
 							.addFilter(ResponseLoggingFilter.logResponseTo(log))
 							.build();
-			return reqSpec;
+			return reqAuthSpec;
 		}
-		return reqSpec;
+		return reqAuthSpec;
 	}
 	
 	public String getGlobalValue(String key) throws IOException {

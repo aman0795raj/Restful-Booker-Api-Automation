@@ -1,0 +1,9 @@
+ResPojo\AuthApiResPojo.class
+TestDataPojo\BookingDates.class
+ResPojo\CreateBookingResPojo.class
+TestDataPojo\TestData.class
+TestDataPojo\BookingDetail.class
+ReqPojo\BookingDates.class
+ReqPojo\CreateBookingReqPojo.class
+ResPojo\AuthApiErrorResPojo.class
+ReqPojo\AuthApiReqPojo.class

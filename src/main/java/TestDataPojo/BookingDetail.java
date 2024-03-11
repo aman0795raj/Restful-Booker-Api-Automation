@@ -1,10 +1,10 @@
 package TestDataPojo;
 
-public class BookingDetails {
+public class BookingDetail {
 	private String firstname;
 	private String lastname;
 	private String totalprice;
-	private String depositpaid;
+	private boolean depositpaid;
 	private BookingDates bookingdates;
 	private String additionalneeds;
 	public String getFirstname() {
@@ -25,10 +25,10 @@ public class BookingDetails {
 	public void setTotalprice(String totalprice) {
 		this.totalprice = totalprice;
 	}
-	public String getDepositpaid() {
+	public boolean getDepositpaid() {
 		return depositpaid;
 	}
-	public void setDepositpaid(String depositpaid) {
+	public void setDepositpaid(boolean depositpaid) {
 		this.depositpaid = depositpaid;
 	}
 	public BookingDates getBookingdates() {

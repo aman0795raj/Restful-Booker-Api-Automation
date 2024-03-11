@@ -3,7 +3,12 @@ package resources;
 public enum Endpoints {
 	HealthCheckApi("/ping"),
 	AuthApi("/auth"),
-	BookingApi("/booking");
+	CreateBookingApi("/booking"),
+	BookingApi("/booking"),
+	GetBookingApi("/booking"),
+	UpdateBookingApi("/booking"),
+	PartialUpdateBookingApi("/booking"),
+	DeleteBookingApi("/booking");
 	
 	private String endpoint;
 

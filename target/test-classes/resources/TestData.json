@@ -1,7 +1,7 @@
 {
 	"username":"admin",
 	"password":"password123",
-	"BookingDetails":{
+	"bookingDetails":{
 		"firstname": "Aman",
     	"lastname": "Raj",
     	"totalprice": 5000,
@@ -11,5 +11,18 @@
         	"checkout": "2024-04-07"
     	},
     	"additionalneeds": "Breakfast"
-	}
+	},
+	"updatedBookingDetails":{
+		"firstname": "Aman Updated",
+    	"lastname": "Raj Updated",
+    	"totalprice": 6000,
+    	"depositpaid": false,
+    	"bookingdates": {
+        	"checkin": "2024-04-08",
+        	"checkout": "2024-04-12"
+    	},
+    	"additionalneeds": "Lunch"
+	},
+	"updatedFirstname":"Updated Aman",
+	"updatedLastname":"Updated Raj"
 }
