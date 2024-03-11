@@ -26,7 +26,7 @@ This project demonstrates API automation testing using Rest Assured, JUnit, Cucu
      ```bash
      maven eclipse:eclipse
      ```
-3. **Import the project into your IDE.**
+3. **Import the project into Eclipse IDE.**
 
 4. **Install dependencies:**
 
