@@ -44,6 +44,7 @@ public class Booker extends Utils {
 	@Given("The user prepares the health check API")
 	public void the_user_prepares_the_health_check_api() throws IOException {
 		reqSpec=given().spec(RequestSpecification());
+		printRequestLogInReport(reqSpec);
 	    
 	}
 	@When("The user calls {string} with {string} http request")
@@ -51,9 +52,11 @@ public class Booker extends Utils {
 		endpoint=Endpoints.valueOf(resource);
 		if(httpMethod.equalsIgnoreCase("get")) {
 			res=reqSpec.when().get(endpoint.getEndpoint());
+			printResponseLogInReport(res);
 		}
 		else if(httpMethod.equalsIgnoreCase("post")) {
 			res=reqSpec.when().post(endpoint.getEndpoint());
+			printResponseLogInReport(res);
 		}
 	    
 	}
@@ -71,6 +74,7 @@ public class Booker extends Utils {
 	@Given("The user prepares token api with blank username and password")
 	public void the_user_prepares_token_api_with_blank_username_and_password() throws IOException {
 		reqSpec=given().spec(RequestSpecification()).body(data.TokenPayload("", ""));
+		printRequestLogInReport(reqSpec);
 	}
 	
 	@Then("The Api call gives status code {string}")
@@ -89,6 +93,7 @@ public class Booker extends Utils {
 	@Given("The user prepares token api with valid username and password")
 	public void the_user_prepares_token_api_with_valid_username_and_password() throws StreamReadException, DatabindException, IOException {
 	    reqSpec=given().spec(RequestSpecification()).body(data.TokenPayload(inputData().getUsername(),inputData().getPassword() ));
+	    printRequestLogInReport(reqSpec);
 	}
 	@Then("The response of Auth Api contains token")
 	public void the_response_of_auth_api_contains_token() {
@@ -109,6 +114,7 @@ public class Booker extends Utils {
 							inputData().getBookingDetails().getBookingdates().getCheckin(),
 							inputData().getBookingDetails().getBookingdates().getCheckout(),
 							inputData().getBookingDetails().getAdditionalneeds()));
+		printRequestLogInReport(reqSpec);
 							
 					    
 	}
@@ -123,6 +129,7 @@ public class Booker extends Utils {
 	@Given("The user prepares GetBookingId api with valid details")
 	public void the_user_prepares_get_booking_id_api_with_valid_details() throws IOException {
 	    reqSpec=given().spec(RequestSpecification());
+	    printRequestLogInReport(reqSpec);
 	}
 	@Then("The BookingId generated in the previous step is visible in response")
 	public void the_booking_id_generated_in_the_previous_step_is_visible_in_response() {
@@ -138,6 +145,7 @@ public class Booker extends Utils {
 	@Given("The user prepares GetBooking api with BookingId path parameter")
 	public void the_user_prepares_get_booking_api_with_booking_id_path_parameter() throws IOException {
 	    reqSpec=given().spec(RequestSpecification()).pathParam("id",bookingId );
+	    printRequestLogInReport(reqSpec);
 	}
 	
 	@When("The user calls {string} with {string} http request and path params {string}")
@@ -145,15 +153,19 @@ public class Booker extends Utils {
 		endpoint=Endpoints.valueOf(resource);
 		if(httpMethod.equalsIgnoreCase("get")) {
 			res=reqSpec.when().get(endpoint.getEndpoint()+"/{"+pathParam+"}");
+			printResponseLogInReport(res);
 		}
 		else if(httpMethod.equalsIgnoreCase("put")) {
 			res=reqSpec.when().put(endpoint.getEndpoint()+"/{"+pathParam+"}");
+			printResponseLogInReport(res);
 		}
 		else if(httpMethod.equalsIgnoreCase("patch")) {
 			res=reqSpec.when().patch(endpoint.getEndpoint()+"/{"+pathParam+"}");
+			printResponseLogInReport(res);
 		}
 		else if(httpMethod.equalsIgnoreCase("delete")) {
 			res=reqSpec.when().delete(endpoint.getEndpoint()+"/{"+pathParam+"}");
+			printResponseLogInReport(res);
 		}
 	}
 	@Then("The booking details provided is displayed in the response")
@@ -181,6 +193,7 @@ public class Booker extends Utils {
 						inputData().getUpdatedBookingDetails().getBookingdates().getCheckout(),
 						inputData().getUpdatedBookingDetails().getAdditionalneeds()
 	    				));
+	    printRequestLogInReport(reqSpec);
 	}
 	@Then("The Updated booking details provided is displayed in the response")
 	public void the_updated_booking_details_provided_is_displayed_in_the_response() throws StreamReadException, DatabindException, IOException {
@@ -203,6 +216,7 @@ public class Booker extends Utils {
 	    				inputData().getUpdatedLastname()
 	    				)
 	    		);
+	    printRequestLogInReport(reqSpec);
 	    		
 	}
 	@Then("The username in the booking details gets updated")

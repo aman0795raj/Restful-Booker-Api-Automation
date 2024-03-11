@@ -1,0 +1,1436 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Automation Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Booker API Automation Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Mar 11, 2024 10:53:58 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Verify that the Restful Booker Api service is Up</p>
+            <p class="text-sm">
+              <span>10:53:59 pm</span> / <span>00:00:03:509</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Verify that the Restful Booker Api service is Up</h5>
+<span class='badge badge-success'>03.11.2024 10:53:59 pm</span>
+<span class='badge badge-danger'>03.11.2024 10:54:02 pm</span>
+<span class='badge badge-default'>00:00:03:509</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:00 pm</td>
+        <td>
+          <span class='badge white-text grey'>Base Url = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:00 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-0'></div>
+ <script>
+  function jsonTreeCreate0() { 
+   document.getElementById('code-block-json-0').innerHTML = JSONTree.create(https://restful-booker.herokuapp.com); 
+  }
+  jsonTreeCreate0();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:00 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:00 pm</td>
+        <td>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:00 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:00 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-2'></div>
+ <script>
+  function jsonTreeCreate2() { 
+   document.getElementById('code-block-json-2').innerHTML = JSONTree.create([Content-Type=application/json]); 
+  }
+  jsonTreeCreate2();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:00 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request Body = null</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:02 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-3'></div>
+ <script>
+  function jsonTreeCreate3() { 
+   document.getElementById('code-block-json-3').innerHTML = JSONTree.create(Response Status = 201); 
+  }
+  jsonTreeCreate3();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:02 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:02 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-4'></div>
+ <script>
+  function jsonTreeCreate4() { 
+   document.getElementById('code-block-json-4').innerHTML = JSONTree.create([Server=Cowboy, Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1710177842&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=RQGUea1AvfaFncbCIagenxMhGZQOPbhwT9zLG2aYqYs%3D"}]}, Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1710177842&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=RQGUea1AvfaFncbCIagenxMhGZQOPbhwT9zLG2aYqYs%3D, Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}, Connection=keep-alive, X-Powered-By=Express, Content-Type=text/plain; charset=utf-8, Content-Length=7, Etag=W/"7-rM9AyJuqT6iOan/xHh+AW+7K/T8", Date=Mon, 11 Mar 2024 17:24:02 GMT, Via=1.1 vegur]); 
+  }
+  jsonTreeCreate4();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:02 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Body = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:02 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-5'></div>
+ <script>
+  function jsonTreeCreate5() { 
+   document.getElementById('code-block-json-5').innerHTML = JSONTree.create(Created); 
+  }
+  jsonTreeCreate5();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Verify that User gets an error on keeping the credential blank for token Api</p>
+            <p class="text-sm">
+              <span>10:54:02 pm</span> / <span>00:00:02:024</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Verify that User gets an error on keeping the credential blank for token Api</h5>
+<span class='badge badge-success'>03.11.2024 10:54:02 pm</span>
+<span class='badge badge-danger'>03.11.2024 10:54:05 pm</span>
+<span class='badge badge-default'>00:00:02:024</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:03 pm</td>
+        <td>
+          <span class='badge white-text grey'>Base Url = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:03 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-6'></div>
+ <script>
+  function jsonTreeCreate6() { 
+   document.getElementById('code-block-json-6').innerHTML = JSONTree.create(https://restful-booker.herokuapp.com); 
+  }
+  jsonTreeCreate6();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:03 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:03 pm</td>
+        <td>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:03 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:03 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-8'></div>
+ <script>
+  function jsonTreeCreate8() { 
+   document.getElementById('code-block-json-8').innerHTML = JSONTree.create([Content-Type=application/json]); 
+  }
+  jsonTreeCreate8();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:03 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request Body = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:03 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-9'></div>
+ <script>
+  function jsonTreeCreate9() { 
+   document.getElementById('code-block-json-9').innerHTML = JSONTree.create({"username":"","password":""}); 
+  }
+  jsonTreeCreate9();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:05 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-10'></div>
+ <script>
+  function jsonTreeCreate10() { 
+   document.getElementById('code-block-json-10').innerHTML = JSONTree.create(Response Status = 200); 
+  }
+  jsonTreeCreate10();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:05 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:05 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-11'></div>
+ <script>
+  function jsonTreeCreate11() { 
+   document.getElementById('code-block-json-11').innerHTML = JSONTree.create([Server=Cowboy, Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1710177844&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=BVimovLk%2BpwpaJcve3I7SQ%2BlFJQbmF3PUg8otk2ZNao%3D"}]}, Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1710177844&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=BVimovLk%2BpwpaJcve3I7SQ%2BlFJQbmF3PUg8otk2ZNao%3D, Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}, Connection=keep-alive, X-Powered-By=Express, Content-Type=application/json; charset=utf-8, Content-Length=28, Etag=W/"1c-J3EiwfZwVQjKTKvpvazUfTni8fI", Date=Mon, 11 Mar 2024 17:24:04 GMT, Via=1.1 vegur]); 
+  }
+  jsonTreeCreate11();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:05 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Body = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:05 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-12'></div>
+ <script>
+  function jsonTreeCreate12() { 
+   document.getElementById('code-block-json-12').innerHTML = JSONTree.create({"reason":"Bad credentials"}); 
+  }
+  jsonTreeCreate12();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Verify that Api call is success on providing valid username and password for token api</p>
+            <p class="text-sm">
+              <span>10:54:05 pm</span> / <span>00:00:01:471</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Verify that Api call is success on providing valid username and password for token api</h5>
+<span class='badge badge-success'>03.11.2024 10:54:05 pm</span>
+<span class='badge badge-danger'>03.11.2024 10:54:06 pm</span>
+<span class='badge badge-default'>00:00:01:471</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:05 pm</td>
+        <td>
+          <span class='badge white-text grey'>Base Url = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:05 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-13'></div>
+ <script>
+  function jsonTreeCreate13() { 
+   document.getElementById('code-block-json-13').innerHTML = JSONTree.create(https://restful-booker.herokuapp.com); 
+  }
+  jsonTreeCreate13();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:05 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:05 pm</td>
+        <td>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:05 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:05 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-15'></div>
+ <script>
+  function jsonTreeCreate15() { 
+   document.getElementById('code-block-json-15').innerHTML = JSONTree.create([Content-Type=application/json]); 
+  }
+  jsonTreeCreate15();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:05 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request Body = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:05 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-16'></div>
+ <script>
+  function jsonTreeCreate16() { 
+   document.getElementById('code-block-json-16').innerHTML = JSONTree.create({"username":"admin","password":"password123"}); 
+  }
+  jsonTreeCreate16();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:06 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-17'></div>
+ <script>
+  function jsonTreeCreate17() { 
+   document.getElementById('code-block-json-17').innerHTML = JSONTree.create(Response Status = 200); 
+  }
+  jsonTreeCreate17();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:06 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:06 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-18'></div>
+ <script>
+  function jsonTreeCreate18() { 
+   document.getElementById('code-block-json-18').innerHTML = JSONTree.create([Server=Cowboy, Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1710177845&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=JZP3aciOqBUj3kB%2B3RYdMZE2U3Et3dDxepTW8QPZrbM%3D"}]}, Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1710177845&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=JZP3aciOqBUj3kB%2B3RYdMZE2U3Et3dDxepTW8QPZrbM%3D, Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}, Connection=keep-alive, X-Powered-By=Express, Content-Type=application/json; charset=utf-8, Content-Length=27, Etag=W/"1b-z8c3mHg1RHCTntjCGs8XKy4VBPw", Date=Mon, 11 Mar 2024 17:24:05 GMT, Via=1.1 vegur]); 
+  }
+  jsonTreeCreate18();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:06 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Body = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:06 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-19'></div>
+ <script>
+  function jsonTreeCreate19() { 
+   document.getElementById('code-block-json-19').innerHTML = JSONTree.create({"token":"b5bd2a36bda90f1"}); 
+  }
+  jsonTreeCreate19();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Verify that the user is able to create a booking</p>
+            <p class="text-sm">
+              <span>10:54:06 pm</span> / <span>00:00:01:635</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Verify that the user is able to create a booking</h5>
+<span class='badge badge-success'>03.11.2024 10:54:06 pm</span>
+<span class='badge badge-danger'>03.11.2024 10:54:08 pm</span>
+<span class='badge badge-default'>00:00:01:635</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:06 pm</td>
+        <td>
+          <span class='badge white-text grey'>Base Url = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:06 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-20'></div>
+ <script>
+  function jsonTreeCreate20() { 
+   document.getElementById('code-block-json-20').innerHTML = JSONTree.create(https://restful-booker.herokuapp.com); 
+  }
+  jsonTreeCreate20();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:06 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:06 pm</td>
+        <td>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:06 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:06 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-22'></div>
+ <script>
+  function jsonTreeCreate22() { 
+   document.getElementById('code-block-json-22').innerHTML = JSONTree.create([Content-Type=application/json]); 
+  }
+  jsonTreeCreate22();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:06 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request Body = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:06 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-23'></div>
+ <script>
+  function jsonTreeCreate23() { 
+   document.getElementById('code-block-json-23').innerHTML = JSONTree.create({"firstname":"Aman","lastname":"Raj","totalprice":"5000","depositpaid":true,"additionalneeds":"Breakfast","bookingdates":{"checkin":"2024-04-05","checkout":"2024-04-07"}}); 
+  }
+  jsonTreeCreate23();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:08 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-24'></div>
+ <script>
+  function jsonTreeCreate24() { 
+   document.getElementById('code-block-json-24').innerHTML = JSONTree.create(Response Status = 200); 
+  }
+  jsonTreeCreate24();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:08 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:08 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-25'></div>
+ <script>
+  function jsonTreeCreate25() { 
+   document.getElementById('code-block-json-25').innerHTML = JSONTree.create([Server=Cowboy, Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1710177847&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=oq6bKy9Rhv%2B14YokzZJrB8M6ydt%2B3B6tZAqu9vUVLyQ%3D"}]}, Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1710177847&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=oq6bKy9Rhv%2B14YokzZJrB8M6ydt%2B3B6tZAqu9vUVLyQ%3D, Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}, Connection=keep-alive, X-Powered-By=Express, Content-Type=application/json; charset=utf-8, Content-Length=197, Etag=W/"c5-IyG2TFA+/oSRmzLd2A6RZ/E7+x0", Date=Mon, 11 Mar 2024 17:24:07 GMT, Via=1.1 vegur]); 
+  }
+  jsonTreeCreate25();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:08 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Body = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:08 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-26'></div>
+ <script>
+  function jsonTreeCreate26() { 
+   document.getElementById('code-block-json-26').innerHTML = JSONTree.create({"bookingid":1800,"booking":{"firstname":"Aman","lastname":"Raj","totalprice":5000,"depositpaid":true,"bookingdates":{"checkin":"2024-04-05","checkout":"2024-04-07"},"additionalneeds":"Breakfast"}}); 
+  }
+  jsonTreeCreate26();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Verify that Booking details is displayed in the response of GetBooking details</p>
+            <p class="text-sm">
+              <span>10:54:08 pm</span> / <span>00:00:01:624</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Verify that Booking details is displayed in the response of GetBooking details</h5>
+<span class='badge badge-success'>03.11.2024 10:54:08 pm</span>
+<span class='badge badge-danger'>03.11.2024 10:54:09 pm</span>
+<span class='badge badge-default'>00:00:01:624</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:08 pm</td>
+        <td>
+          <span class='badge white-text grey'>Base Url = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:08 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-27'></div>
+ <script>
+  function jsonTreeCreate27() { 
+   document.getElementById('code-block-json-27').innerHTML = JSONTree.create(https://restful-booker.herokuapp.com); 
+  }
+  jsonTreeCreate27();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:08 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:08 pm</td>
+        <td>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:08 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:08 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-29'></div>
+ <script>
+  function jsonTreeCreate29() { 
+   document.getElementById('code-block-json-29').innerHTML = JSONTree.create([Content-Type=application/json]); 
+  }
+  jsonTreeCreate29();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:08 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request Body = null</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:09 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-30'></div>
+ <script>
+  function jsonTreeCreate30() { 
+   document.getElementById('code-block-json-30').innerHTML = JSONTree.create(Response Status = 200); 
+  }
+  jsonTreeCreate30();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:09 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:09 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-31'></div>
+ <script>
+  function jsonTreeCreate31() { 
+   document.getElementById('code-block-json-31').innerHTML = JSONTree.create([Server=Cowboy, Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1710177849&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=4WlqB%2F7hF856JSlbPXYemGOgbWYi93P1K75yCd2qz54%3D"}]}, Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1710177849&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=4WlqB%2F7hF856JSlbPXYemGOgbWYi93P1K75yCd2qz54%3D, Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}, Connection=keep-alive, X-Powered-By=Express, Content-Type=application/json; charset=utf-8, Content-Length=168, Etag=W/"a8-vzxhDSpqQnZmgGwz9Ht82feULMM", Date=Mon, 11 Mar 2024 17:24:09 GMT, Via=1.1 vegur]); 
+  }
+  jsonTreeCreate31();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:09 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Body = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:09 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-32'></div>
+ <script>
+  function jsonTreeCreate32() { 
+   document.getElementById('code-block-json-32').innerHTML = JSONTree.create({"firstname":"Aman","lastname":"Raj","totalprice":5000,"depositpaid":true,"bookingdates":{"checkin":"2024-04-05","checkout":"2024-04-07"},"additionalneeds":"Breakfast"}); 
+  }
+  jsonTreeCreate32();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Verify that User is able to update the entire Booking details with UpdateBooking Api</p>
+            <p class="text-sm">
+              <span>10:54:09 pm</span> / <span>00:00:01:575</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Verify that User is able to update the entire Booking details with UpdateBooking Api</h5>
+<span class='badge badge-success'>03.11.2024 10:54:09 pm</span>
+<span class='badge badge-danger'>03.11.2024 10:54:11 pm</span>
+<span class='badge badge-default'>00:00:01:575</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:09 pm</td>
+        <td>
+          <span class='badge white-text grey'>Base Url = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:09 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-33'></div>
+ <script>
+  function jsonTreeCreate33() { 
+   document.getElementById('code-block-json-33').innerHTML = JSONTree.create(https://restful-booker.herokuapp.com); 
+  }
+  jsonTreeCreate33();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:09 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:09 pm</td>
+        <td>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:09 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:09 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-35'></div>
+ <script>
+  function jsonTreeCreate35() { 
+   document.getElementById('code-block-json-35').innerHTML = JSONTree.create([Cookie=token=b5bd2a36bda90f1, Accept=application/json, Content-Type=application/json]); 
+  }
+  jsonTreeCreate35();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:09 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request Body = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:09 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-36'></div>
+ <script>
+  function jsonTreeCreate36() { 
+   document.getElementById('code-block-json-36').innerHTML = JSONTree.create({"firstname":"Aman Updated","lastname":"Raj Updated","totalprice":"6000","depositpaid":false,"additionalneeds":"Lunch","bookingdates":{"checkin":"2024-04-08","checkout":"2024-04-12"}}); 
+  }
+  jsonTreeCreate36();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:11 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-37'></div>
+ <script>
+  function jsonTreeCreate37() { 
+   document.getElementById('code-block-json-37').innerHTML = JSONTree.create(Response Status = 200); 
+  }
+  jsonTreeCreate37();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:11 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:11 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-38'></div>
+ <script>
+  function jsonTreeCreate38() { 
+   document.getElementById('code-block-json-38').innerHTML = JSONTree.create([Server=Cowboy, Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1710177850&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=074wuOd2Sa1bBtSs8d9qjeOrYbsthGCU%2FAUDyZHAglk%3D"}]}, Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1710177850&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=074wuOd2Sa1bBtSs8d9qjeOrYbsthGCU%2FAUDyZHAglk%3D, Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}, Connection=keep-alive, X-Powered-By=Express, Content-Type=application/json; charset=utf-8, Content-Length=181, Etag=W/"b5-+RNmRunJFhSe+aqc/QpOQqBfKhQ", Date=Mon, 11 Mar 2024 17:24:10 GMT, Via=1.1 vegur]); 
+  }
+  jsonTreeCreate38();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:11 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Body = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:11 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-39'></div>
+ <script>
+  function jsonTreeCreate39() { 
+   document.getElementById('code-block-json-39').innerHTML = JSONTree.create({"firstname":"Aman Updated","lastname":"Raj Updated","totalprice":6000,"depositpaid":false,"bookingdates":{"checkin":"2024-04-08","checkout":"2024-04-12"},"additionalneeds":"Lunch"}); 
+  }
+  jsonTreeCreate39();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Verify that user is able to update the username from booking details</p>
+            <p class="text-sm">
+              <span>10:54:11 pm</span> / <span>00:00:01:603</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Verify that user is able to update the username from booking details</h5>
+<span class='badge badge-success'>03.11.2024 10:54:11 pm</span>
+<span class='badge badge-danger'>03.11.2024 10:54:13 pm</span>
+<span class='badge badge-default'>00:00:01:603</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:11 pm</td>
+        <td>
+          <span class='badge white-text grey'>Base Url = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:11 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-40'></div>
+ <script>
+  function jsonTreeCreate40() { 
+   document.getElementById('code-block-json-40').innerHTML = JSONTree.create(https://restful-booker.herokuapp.com); 
+  }
+  jsonTreeCreate40();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:11 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:11 pm</td>
+        <td>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:11 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:11 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-42'></div>
+ <script>
+  function jsonTreeCreate42() { 
+   document.getElementById('code-block-json-42').innerHTML = JSONTree.create([Cookie=token=b5bd2a36bda90f1, Accept=application/json, Content-Type=application/json]); 
+  }
+  jsonTreeCreate42();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:11 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request Body = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:11 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-43'></div>
+ <script>
+  function jsonTreeCreate43() { 
+   document.getElementById('code-block-json-43').innerHTML = JSONTree.create({"firstname":"Updated Aman","lastname":"Updated Raj"}); 
+  }
+  jsonTreeCreate43();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:13 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-44'></div>
+ <script>
+  function jsonTreeCreate44() { 
+   document.getElementById('code-block-json-44').innerHTML = JSONTree.create(Response Status = 200); 
+  }
+  jsonTreeCreate44();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:13 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:13 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-45'></div>
+ <script>
+  function jsonTreeCreate45() { 
+   document.getElementById('code-block-json-45').innerHTML = JSONTree.create([Server=Cowboy, Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1710177852&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=MP9hXP32WLNSvUTPPHgTPklZ6bXr6%2BrcfMVGD1xRjt4%3D"}]}, Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1710177852&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=MP9hXP32WLNSvUTPPHgTPklZ6bXr6%2BrcfMVGD1xRjt4%3D, Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}, Connection=keep-alive, X-Powered-By=Express, Content-Type=application/json; charset=utf-8, Content-Length=181, Etag=W/"b5-KjoGtcFGn9W9dP9Ik9bbCz5iKSg", Date=Mon, 11 Mar 2024 17:24:12 GMT, Via=1.1 vegur]); 
+  }
+  jsonTreeCreate45();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:13 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Body = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:13 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-46'></div>
+ <script>
+  function jsonTreeCreate46() { 
+   document.getElementById('code-block-json-46').innerHTML = JSONTree.create({"firstname":"Updated Aman","lastname":"Updated Raj","totalprice":6000,"depositpaid":false,"bookingdates":{"checkin":"2024-04-08","checkout":"2024-04-12"},"additionalneeds":"Lunch"}); 
+  }
+  jsonTreeCreate46();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Verify that the user is able to delete the booking details</p>
+            <p class="text-sm">
+              <span>10:54:13 pm</span> / <span>00:00:01:520</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Verify that the user is able to delete the booking details</h5>
+<span class='badge badge-success'>03.11.2024 10:54:13 pm</span>
+<span class='badge badge-danger'>03.11.2024 10:54:14 pm</span>
+<span class='badge badge-default'>00:00:01:520</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:14 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-47'></div>
+ <script>
+  function jsonTreeCreate47() { 
+   document.getElementById('code-block-json-47').innerHTML = JSONTree.create(Response Status = 201); 
+  }
+  jsonTreeCreate47();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:14 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:14 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-48'></div>
+ <script>
+  function jsonTreeCreate48() { 
+   document.getElementById('code-block-json-48').innerHTML = JSONTree.create([Server=Cowboy, Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1710177853&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=cC6oiLBL%2F1xFAYwDqz1idsoHFaXUZSdvuDcsaPUQJUI%3D"}]}, Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1710177853&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=cC6oiLBL%2F1xFAYwDqz1idsoHFaXUZSdvuDcsaPUQJUI%3D, Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}, Connection=keep-alive, X-Powered-By=Express, Content-Type=text/plain; charset=utf-8, Content-Length=7, Etag=W/"7-rM9AyJuqT6iOan/xHh+AW+7K/T8", Date=Mon, 11 Mar 2024 17:24:13 GMT, Via=1.1 vegur]); 
+  }
+  jsonTreeCreate48();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:14 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Body = </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:14 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-49'></div>
+ <script>
+  function jsonTreeCreate49() { 
+   document.getElementById('code-block-json-49').innerHTML = JSONTree.create(Created); 
+  }
+  jsonTreeCreate49();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Mar 11, 2024 10:53:58 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Mar 11, 2024 10:54:14 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>8</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>8</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>94</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Verify that the Restful Booker Api service is Up":3.509,"Verify that User gets an error on keeping the credential blank for token Api":2.024,"Verify that Api call is success on providing valid username and password for token api":1.471,"Verify that the user is able to create a booking":1.635,"Verify that Booking details is displayed in the response of GetBooking details":1.624,"Verify that User is able to update the entire Booking details with UpdateBooking Api":1.575,"Verify that user is able to update the username from booking details":1.603,"Verify that the user is able to delete the booking details":1.52
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 8,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 0,
+failEvents: 0,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 94
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

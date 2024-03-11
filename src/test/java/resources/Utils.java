@@ -1,6 +1,9 @@
 package resources;
 
+import io.restassured.specification.QueryableRequestSpecification;
 import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.SpecificationQuerier;
+import reporting.ExtentReporter;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -17,10 +20,12 @@ import TestDataPojo.TestData;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
+import io.restassured.response.Response;
 
 public class Utils {
 	public static RequestSpecification reqSpec, reqAuthSpec;
 	public static PrintStream log;
+	public static String FileSeparator = File.separator;
 	
 	public io.restassured.specification.RequestSpecification RequestSpecification() throws IOException {
 		if(reqSpec==null) {
@@ -68,6 +73,26 @@ public class Utils {
 		return data;
 	}
 	
+	protected static void printRequestLogInReport(RequestSpecification reqSpecification) {
+		QueryableRequestSpecification queryableRequestSpecification = SpecificationQuerier.query(reqSpecification);
+		ExtentReporter.logInfoDetails("Base Url = "+queryableRequestSpecification.getBaseUri());
+		ExtentReporter.logInfoDetails("Method = "+queryableRequestSpecification.getMethod());
+		ExtentReporter.logInfoDetails("Headers = "+queryableRequestSpecification.getHeaders().asList().toString());
+		if(queryableRequestSpecification.getBody()!=null) {
+			ExtentReporter.logInfoDetails("Request Body = ");
+			ExtentReporter.logJson(queryableRequestSpecification.getBody().toString());
+		}else {
+			ExtentReporter.logInfoDetails("Request Body = null");
+		}
+		
+	}
 	
+	public static void printResponseLogInReport(Response res) {
+		ExtentReporter.logInfoDetails("Response Status = "+res.getStatusCode());
+		ExtentReporter.logInfoDetails("Response Headers = "+res.getHeaders().asList().toString());
+		ExtentReporter.logInfoDetails("Response Body = ");
+		ExtentReporter.logJson(res.getBody().asString());
+		
+	}
 
 }
