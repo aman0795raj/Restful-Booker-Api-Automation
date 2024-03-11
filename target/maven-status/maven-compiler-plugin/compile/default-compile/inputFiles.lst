@@ -1,9 +1,14 @@
+D:\eclipse-workspace\restful-booker-api-automation\src\main\java\reporting\Setup.java
 D:\eclipse-workspace\restful-booker-api-automation\src\main\java\ReqPojo\AuthApiReqPojo.java
-D:\eclipse-workspace\restful-booker-api-automation\src\main\java\TestDataPojo\BookingDates.java
-D:\eclipse-workspace\restful-booker-api-automation\src\main\java\ReqPojo\BookingDates.java
 D:\eclipse-workspace\restful-booker-api-automation\src\main\java\ReqPojo\CreateBookingReqPojo.java
+D:\eclipse-workspace\restful-booker-api-automation\src\main\java\reporting\ExtentReporter.java
 D:\eclipse-workspace\restful-booker-api-automation\src\main\java\ResPojo\AuthApiErrorResPojo.java
 D:\eclipse-workspace\restful-booker-api-automation\src\main\java\ResPojo\CreateBookingResPojo.java
 D:\eclipse-workspace\restful-booker-api-automation\src\main\java\TestDataPojo\TestData.java
-D:\eclipse-workspace\restful-booker-api-automation\src\main\java\ResPojo\AuthApiResPojo.java
 D:\eclipse-workspace\restful-booker-api-automation\src\main\java\TestDataPojo\BookingDetail.java
+D:\eclipse-workspace\restful-booker-api-automation\src\main\java\ResPojo\GetBookingId.java
+D:\eclipse-workspace\restful-booker-api-automation\src\main\java\TestDataPojo\BookingDates.java
+D:\eclipse-workspace\restful-booker-api-automation\src\main\java\ReqPojo\BookingDates.java
+D:\eclipse-workspace\restful-booker-api-automation\src\main\java\ReqPojo\PartialBookingReqPojo.java
+D:\eclipse-workspace\restful-booker-api-automation\src\main\java\ResPojo\GetBookingIdResPojo.java
+D:\eclipse-workspace\restful-booker-api-automation\src\main\java\ResPojo\AuthApiResPojo.java
