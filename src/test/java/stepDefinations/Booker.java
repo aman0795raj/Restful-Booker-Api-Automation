@@ -16,7 +16,11 @@ import static org.junit.Assert.assertEquals;
 import java.io.File;
 import java.io.IOException;
 
+import com.fasterxml.jackson.core.exc.StreamReadException;
+import com.fasterxml.jackson.databind.DatabindException;
+
 import ResPojo.AuthApiErrorResPojo;
+import ResPojo.AuthApiResPojo;
 
 public class Booker extends Utils {
 	RequestSpecification reqSpec;
@@ -24,6 +28,8 @@ public class Booker extends Utils {
 	Endpoints endpoint;
 	BuildTestData data = new BuildTestData();
 	AuthApiErrorResPojo authApiErrorRes;
+	AuthApiResPojo authApiRes;
+	public static String authToken;
 	
 	//Scenario: Verify that the Restful Booker Api service is Up
 	@Given("The user prepares the health check API")
@@ -70,5 +76,16 @@ public class Booker extends Utils {
 		
 	}
 	
+	//Scenario: Verify that Api call is success on providing valid username and password for token api
+	@Given("The user prepares token api with valid username and password")
+	public void the_user_prepares_token_api_with_valid_username_and_password() throws StreamReadException, DatabindException, IOException {
+	    reqSpec=given().spec(RequestSpecification()).body(data.TokenPayload(inputData().getUsername(),inputData().getPassword() ));
+	}
+	@Then("The response of Auth Api contains token")
+	public void the_response_of_auth_api_contains_token() {
+	   authApiRes=res.as(AuthApiResPojo.class);
+	   authToken=authApiRes.getToken();
+	   System.out.println("Token: "+authToken);
+	}
 	
 }
