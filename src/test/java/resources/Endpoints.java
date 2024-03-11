@@ -1,7 +1,8 @@
 package resources;
 
 public enum Endpoints {
-	HealthCheckApi("/ping");
+	HealthCheckApi("/ping"),
+	AuthApi("/auth");
 	private String endpoint;
 
 	Endpoints(String endpoint) {
