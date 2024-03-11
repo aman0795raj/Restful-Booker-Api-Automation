@@ -34,9 +34,9 @@ public class Booker extends Utils {
 		}
 	    
 	}
-	@Then("The Api call is success with status code {string}")
-	public void the_api_call_is_success_with_status_code(String statusCode) {
-	    if(Integer.parseInt(statusCode)== 201) {
+	@Then("The Healthcheck Api call is success with status code {string}")
+	public void the_healthcheck_api_call_is_success_with_status_code(String statusCode) {
+		if(Integer.parseInt(statusCode)== 201) {
 	    	healthChekApi=true;
 	    	assertEquals(true,true);
 	    }
